@@ -1,0 +1,16 @@
+[
+{
+  "modid": "vchan",
+  "name": "Voice Channel Mod",
+  "description": "This mod adds voice communication capabilities to minecraft",
+  "version": "0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["poste9"],
+  "credits": "Forge, FML and MrCrayfish for making starting into this 'world' so easy",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
