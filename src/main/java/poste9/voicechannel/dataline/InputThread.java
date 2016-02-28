@@ -6,10 +6,6 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.TargetDataLine;
 
-import org.apache.logging.log4j.Level;
-
-import cpw.mods.fml.common.FMLLog;
-
 public class InputThread extends Thread {
 	
 	public InputThread( DataLine.Info info, AudioFormat format )

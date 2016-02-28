@@ -1,7 +1,5 @@
 package poste9.voicechannel;
 
-import java.io.ByteArrayOutputStream;
-
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
@@ -10,7 +8,6 @@ import javax.sound.sampled.TargetDataLine;
 
 import poste9.voicechannel.dataline.InputThread;
 import poste9.voicechannel.dataline.OutputThread;
-import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;

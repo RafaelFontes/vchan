@@ -1,23 +1,15 @@
 package poste9.voicechannel.dataline;
 
-import java.util.Collection;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.TargetDataLine;
 
 import scala.actors.threadpool.Arrays;
-
-import com.sun.corba.se.impl.orbutil.concurrent.Mutex;
-import com.sun.jmx.remote.internal.ArrayQueue;
 
 public class OutputThread extends Thread {
 
@@ -25,7 +17,7 @@ public class OutputThread extends Thread {
 	
 	public OutputThread( DataLine.Info info, AudioFormat format )
 	{
-		queue = new ArrayBlockingQueue(MAX_PACKETS_IN_BUFFER);
+		queue = new ArrayBlockingQueue<byte[]>(MAX_PACKETS_IN_BUFFER);
 		
 		this.info = info;
 		this.format = format;
