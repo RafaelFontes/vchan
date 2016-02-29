@@ -1,15 +1,15 @@
 [
 {
-  "modid": "vchan",
+  "modid": "VCM",
   "name": "Voice Channel Mod",
-  "description": "This mod adds voice communication capabilities to minecraft",
+  "description": "This mod adds voice communication capabilities",
   "version": "0.1",
   "mcversion": "1.7.10",
-  "url": "",
+  "url": "http://fb.com/poste9",
   "updateUrl": "",
-  "authorList": ["poste9"],
-  "credits": "Forge, FML and MrCrayfish for making starting into this 'world' so easy",
-  "logoFile": "",
+  "authorList": ["poste9", "JavaBond"],
+  "credits": "Forge, FML , MrCrayfish and coolAlias",
+  "logoFile": "vchan-logo.png",
   "screenshots": [],
   "dependencies": []
 }
