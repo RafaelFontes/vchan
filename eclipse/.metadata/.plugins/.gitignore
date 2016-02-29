@@ -8,3 +8,5 @@ org.eclipse.mylyn.context.core
 org.eclipse.mylyn.tasks.ui
 org.eclipse.team.cvs.core
 org.eclipse.ui.workbench
+/org.eclipse.team.ui/
+/org.eclipse.wst.sse.core/
