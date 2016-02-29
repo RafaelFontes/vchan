@@ -1,6 +1,6 @@
 package poste9.voicechannel.net;
 
-import poste9.voicechannel.VoiceChannelMod;
+import poste9.voicechannel.VCM;
 import net.minecraft.entity.player.EntityPlayer;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
@@ -20,11 +20,11 @@ public abstract class AbstractMessageHandler<T extends IMessage> implements IMes
 	{
 		if ( ctx.side.isClient() )
 		{
-			return handleClientMessage( VoiceChannelMod.proxy.getPlayerEntity(ctx), message, ctx);
+			return handleClientMessage( VCM.proxy.getPlayerEntity(ctx), message, ctx);
 		}
 		else
 		{
-			return handleServerMessage( VoiceChannelMod.proxy.getPlayerEntity(ctx), message, ctx);
+			return handleServerMessage( VCM.proxy.getPlayerEntity(ctx), message, ctx);
 		}
 	}
 }

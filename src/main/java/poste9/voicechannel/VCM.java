@@ -27,8 +27,8 @@ import cpw.mods.fml.common.network.simpleimpl.MessageContext;
 import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import cpw.mods.fml.relauncher.Side;
 
-@Mod(modid = VoiceChannelMod.MOD_ID, name = VoiceChannelMod.MOD_NAME, version = VoiceChannelMod.MOD_VERSION, useMetadata = true)
-public class VoiceChannelMod 
+@Mod(modid = VCM.MOD_ID, name = VCM.MOD_NAME, version = VCM.MOD_VERSION, useMetadata = true)
+public class VCM 
 {
 	public final static String MOD_ID = "VCM";
 	public final static String MOD_VERSION = "0.1";
@@ -37,7 +37,7 @@ public class VoiceChannelMod
 	public static final Logger logger = LogManager.getLogger(MOD_ID);
 	
 	@Mod.Instance(MOD_ID)
-	public static VoiceChannelMod instance;
+	public static VCM instance;
 	
 	@SidedProxy(clientSide = "poste9.voicechannel.ModProxyClient", serverSide = "poste9.voicechannel.ModProxy")
 	public static ModProxy proxy;

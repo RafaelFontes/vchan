@@ -13,7 +13,7 @@ public class ModEventHandler {
 	@SubscribeEvent
 	public void onEntityConstructing(EntityConstructing event) {
 		if (event.entity instanceof EntityPlayer) {
-			VoiceChannelMod.logger.info("Registering extended properties for player");
+			VCM.logger.info("Registering extended properties for player");
 		}
 	}
 	
@@ -23,12 +23,12 @@ public class ModEventHandler {
 		// need to be synced to the client, you must send a packet each time the
 		// player joins the world; this takes care of dying, changing dimensions, etc.
 		if (event.entity instanceof EntityPlayerMP) {
-			VoiceChannelMod.logger.info("Player joined world, sending extended properties to client");
+			VCM.logger.info("Player joined world, sending extended properties to client");
 		}
 	}
 
 	@SubscribeEvent
 	public void onClonePlayer(PlayerEvent event) {
-		VoiceChannelMod.logger.info("Cloning player extended properties");
+		VCM.logger.info("Cloning player extended properties");
 	}
 }

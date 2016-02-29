@@ -1,6 +1,6 @@
 package poste9.voicechannel.net;
 
-import poste9.voicechannel.VoiceChannelMod;
+import poste9.voicechannel.VCM;
 import poste9.voicechannel.VoiceMessage;
 import poste9.voicechannel.VoiceMessage.Handler;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,7 +13,7 @@ public class VoicePacketDispatcher {
 	
 	private static byte packetId = 0;
 	
-	private static final SimpleNetworkWrapper dispatcher = NetworkRegistry.INSTANCE.newSimpleChannel( VoiceChannelMod.MOD_ID );
+	private static final SimpleNetworkWrapper dispatcher = NetworkRegistry.INSTANCE.newSimpleChannel( VCM.MOD_ID );
 	
 	public static final void registerPackets()
 	{
